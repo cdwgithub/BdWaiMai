@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_bottom_height"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/iv_Home"
+                android:layout_width="@dimen/main_bottom_iconheight"
+                android:layout_height="@dimen/main_bottom_iconheight"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:src="@drawable/tab_icon_home_selected"/>
+            <TextView
+                android:id="@+id/tv_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/bottom_text_selected"
+                android:textSize="@dimen/main_bottom_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/iv_Order"
+                android:layout_width="@dimen/main_bottom_iconheight"
+                android:layout_height="@dimen/main_bottom_iconheight"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:src="@drawable/tab_icon_dingdan"/>
+            <TextView
+                android:id="@+id/tv_Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:textColor="@color/bottom_text"
+                android:textSize="@dimen/main_bottom_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_Me"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/iv_Me"
+                android:layout_width="@dimen/main_bottom_iconheight"
+                android:layout_height="@dimen/main_bottom_iconheight"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:src="@drawable/tab_icon_me"/>
+            <TextView
+                android:id="@+id/tv_Me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me"
+                android:textColor="@color/bottom_text"
+                android:textSize="@dimen/main_bottom_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
